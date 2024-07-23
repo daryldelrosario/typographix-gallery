@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: whitesmoke;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+/* STICKY NAVBAR STYLES */
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(51, 51, 51);
+  align-items: center;
+  padding: 5px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 60px;
+  background: whitesmoke;
+}
+
+.nav-left h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+
+#navbar.scrolled .nav-left h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  color: hsl(0, 0%, 13%);
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: hsl(0, 0%, 25%);
+}
+
+/* FOOTER STYLES */
+footer {
+  color: rgb(51, 51, 51);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+.social-icons{
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: hsl(0, 0%, 13%);
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: hsl(0, 0%, 25%);
+}
+
+/* MEDIA QUERIES ======================== */
+/* TABLET */
+@media screen and (max-width: 1025px) {
+  .nav-left h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* SMARTPHONE VERTICAL */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 5%;
+  }
+
+  .nav-right a {
+    margin-left: unset;
+    margin-right: 20px;
+  }
+}
