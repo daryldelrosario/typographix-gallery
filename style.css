@@ -114,7 +114,26 @@ footer {
   .nav-left h1 {
     font-size: 1.5rem !important;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, minmax(150px, auto));
+    padding: 5px;
+    margin: auto;
+  }
+
+  .grid > div {
+    grid-area: auto;
+  }
 }
+
+/* TARGET HORIZONTAL ORIENTATION AND TYPICAL LANDSCAPE WIDTHS */
+@media (orientation: landscape) and (max-width: 1024px) {
+  img {
+    max-height: 90vh;
+  }
+}
+
 
 /* SMARTPHONE VERTICAL */
 @media screen and (max-width: 600px) {
