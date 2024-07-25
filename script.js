@@ -1,3 +1,27 @@
+// Allow for selection of image to trigger modal view 
+const items = document.querySelectorAll('.grid > div');
+
+items.forEach(item => {
+  item.title = "Click to Enlarge";
+  item.addEventListener("click", () => {
+    const imgSrc = item.querySelector('img').src;
+    // Create the modal div 
+    const modal = document.createElement("div");
+    modal.classList("modal");
+
+    // Create the img element 
+    const imgElement = document.createElement("img");
+    imgElement.src = imgSrc;
+    imgElement.alt = "enlarted abstract image";
+
+    // Append the img elemet to modal div 
+    modal.appendChild(imgElement);
+
+    // Add the modal to the body
+    document.body.appendChild(modal);
+  })
+});
+
 // FUNCTION TO CHECK IF PAGE IS SCROLLED AND ADJUST THE LOGO SIZE 
 function checkScroll() {
   const navbar = document.getElementById("navbar");
