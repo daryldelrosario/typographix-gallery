@@ -82,6 +82,24 @@ img {
   cursor: pointer;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+}
+
 /* FOOTER STYLES */
 footer {
   color: rgb(51, 51, 51);
