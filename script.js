@@ -12,7 +12,7 @@ items.forEach(item => {
     // Create the img element 
     const imgElement = document.createElement("img");
     imgElement.src = imgSrc;
-    imgElement.alt = "enlarted abstract image";
+    imgElement.alt = "enlarged abstract image";
 
     // Append the img elemet to modal div 
     modal.appendChild(imgElement);
