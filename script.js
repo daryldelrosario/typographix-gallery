@@ -1,5 +1,4 @@
 // FUNCTION TO CHECK IF PAGE IS SCROLLED AND ADJUST THE LOGO SIZE 
-
 function checkScroll() {
   const navbar = document.getElementById("navbar");
   const logo = document.getElementById("logo");
