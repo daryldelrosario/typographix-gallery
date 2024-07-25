@@ -19,6 +19,11 @@ items.forEach(item => {
 
     // Add the modal to the body
     document.body.appendChild(modal);
+
+    // REMOVE MODAL WHEN CLICKED
+    modal.addEventListener("click", () => {
+      modal.remove();
+    });
   })
 });
 
