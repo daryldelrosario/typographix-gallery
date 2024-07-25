@@ -7,7 +7,7 @@ items.forEach(item => {
     const imgSrc = item.querySelector('img').src;
     // Create the modal div 
     const modal = document.createElement("div");
-    modal.classList("modal");
+    modal.classList.add("modal");
 
     // Create the img element 
     const imgElement = document.createElement("img");
