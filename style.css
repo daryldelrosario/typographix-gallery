@@ -86,10 +86,10 @@ img {
   display: block;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
 
-  &:hover {
-    transform: scale(1.5);
-  }
+.item:hover img {
+  transform: scale(1.5);
 }
 
 .caption {
@@ -125,6 +125,16 @@ img {
   max-width: 90%;
   max-height: 90%;
   object-fit: cover;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: 
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+}
+
+.modal img.reveal {
+  transform: scale(1);
+  opacity: 1;
 }
 
 /* FOOTER STYLES */
