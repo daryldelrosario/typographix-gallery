@@ -92,6 +92,22 @@ img {
   }
 }
 
+.caption {
+  position: absolute;
+  bottom: -100%;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: bottom 0.3s ease;
+}
+
+.item:hover .caption {
+  bottom: 0;
+}
+
 .modal {
   position: fixed;
   top: 0;
