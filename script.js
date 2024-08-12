@@ -17,6 +17,12 @@ setRandomColors();
 // CONTINUE to change colors every 2 seconds
 setInterval(setRandomColors, 2000);
 
+// SHOW loader for 3 seconds, then show content
+setTimeout(() => {
+  document.querySelector(".loader-container").style.display = "none";
+  document.querySelectorAll(".item").forEach(el => el.style.opacity = "1");
+}, 3000);
+
 // Allow for selection of image to trigger modal view 
 const items = document.querySelectorAll('.item');
 
