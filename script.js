@@ -1,3 +1,22 @@
+// Loading Animation 
+// FUNCTION: Generate random color
+function getRandomColor() {
+  return "#" + Math.random().toString(16).slice(-6);
+}
+
+// FUNCTION: Set random colors to the squares 
+function setRandomColors() {
+  document.querySelector(".color1").style.backgroundColor = getRandomColor();
+  document.querySelector(".color2").style.backgroundColor = getRandomColor();
+  document.querySelector(".color3").style.backgroundColor = getRandomColor();
+}
+
+// INITIALIZE with random colors
+setRandomColors();
+
+// CONTINUE to change colors every 2 seconds
+setInterval(setRandomColors, 2000);
+
 // Allow for selection of image to trigger modal view 
 const items = document.querySelectorAll('.item');
 
