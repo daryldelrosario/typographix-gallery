@@ -17,10 +17,20 @@ h1 {
 }
 
 /* LOADER STYLES */
+.loader-container {
+  width: 100%;
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+
 #loader {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 250px;
 }
 
 .square {
@@ -111,6 +121,8 @@ nav {
 .item {
   position: relative;
   overflow: hidden;  
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
 }
 
 .item1 { grid-area: 1 / 1 / 4 / 2; }
